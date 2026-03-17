@@ -10,10 +10,15 @@
 7. Users should be able to view their transaction history and group expenses.
 8. The system should handle concurrent transactions and ensure data consistency.
 
+## UML Class Diagram
+
+![](../class-diagrams/splitwise-class-diagram.png)
+
 ## Implementations
-#### [Java Implementation](../solutions/java/src/splitwise/) 
+#### [Java Implementation](../solutions/java/src/splitwise/)
 #### [Python Implementation](../solutions/python/splitwise/)
-#### [C# Implementation](../solutions/c%23/Splitwise/)
+#### [C++ Implementation](../solutions/cpp/splitwise/)
+#### [C# Implementation](../solutions/csharp/splitwise/)
 #### [Go Implementation](../solutions/golang/splitwise/)
 
 ## Classes, Interfaces and Enumerations

@@ -9,10 +9,15 @@
 6. The game should handle player turns and validate moves to ensure they are legal.
 7. The game should detect and announce the winner or a draw at the end of the game.
 
+## UML Class Diagram
+
+![](../class-diagrams/tictactoe-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/tictactoe/) 
 #### [Python Implementation](../solutions/python/tictactoe/)
-#### [C# Implementation](../solutions/c%23/TicTacToe/)
+#### [C++ Implementation](../solutions/cpp/tictactoe/)
+#### [C# Implementation](../solutions/csharp/tictactoe/)
 #### [Go Implementation](../solutions/golang/tictactoe/)
 
 ## Classes, Interfaces and Enumerations

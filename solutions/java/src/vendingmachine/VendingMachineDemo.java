@@ -1,55 +1,40 @@
 package vendingmachine;
 
+import vendingmachine.enums.Coin;
+
 public class VendingMachineDemo {
-    public static void run() {
+    public static void main(String[] args) {
         VendingMachine vendingMachine = VendingMachine.getInstance();
 
         // Add products to the inventory
-        Product coke = new Product("Coke", 1.5);
-        Product pepsi = new Product("Pepsi", 1.5);
-        Product water = new Product("Water", 1.0);
-
-        vendingMachine.inventory.addProduct(coke, 5);
-        vendingMachine.inventory.addProduct(pepsi, 3);
-        vendingMachine.inventory.addProduct(water, 2);
+        vendingMachine.addItem("A1", "Coke", 25, 3);
+        vendingMachine.addItem("A2", "Pepsi", 25, 2);
+        vendingMachine.addItem("B1", "Water", 10, 5);
 
         // Select a product
-        vendingMachine.selectProduct(coke);
+        System.out.println("\n--- Step 1: Select an item ---");
+        vendingMachine.selectItem("A1");
 
         // Insert coins
-        vendingMachine.insertCoin(Coin.QUARTER);
-        vendingMachine.insertCoin(Coin.QUARTER);
-        vendingMachine.insertCoin(Coin.QUARTER);
-        vendingMachine.insertCoin(Coin.QUARTER);
-
-        // Insert a note
-        vendingMachine.insertNote(Note.FIVE);
+        System.out.println("\n--- Step 2: Insert coins ---");
+        vendingMachine.insertCoin(Coin.DIME); // 10
+        vendingMachine.insertCoin(Coin.DIME); // 10
+        vendingMachine.insertCoin(Coin.NICKEL); // 5
 
         // Dispense the product
-        vendingMachine.dispenseProduct();
+        System.out.println("\n--- Step 3: Dispense item ---");
+        vendingMachine.dispense(); // Should dispense Coke
 
-        // Return change
-        vendingMachine.returnChange();
+        // Select another item
+        System.out.println("\n--- Step 4: Select another item ---");
+        vendingMachine.selectItem("B1");
 
-        // Select another product
-        vendingMachine.selectProduct(pepsi);
-
-        // Insert insufficient payment
-        vendingMachine.insertCoin(Coin.QUARTER);
+        // Insert more amount
+        System.out.println("\n--- Step 5: Insert more than needed ---");
+        vendingMachine.insertCoin(Coin.QUARTER); // 25
 
         // Try to dispense the product
-        vendingMachine.dispenseProduct();
-
-        // Insert more coins
-        vendingMachine.insertCoin(Coin.QUARTER);
-        vendingMachine.insertCoin(Coin.QUARTER);
-        vendingMachine.insertCoin(Coin.QUARTER);
-        vendingMachine.insertCoin(Coin.QUARTER);
-
-        // Dispense the product
-        vendingMachine.dispenseProduct();
-
-        // Return change
-        vendingMachine.returnChange();
+        System.out.println("\n--- Step 6: Dispense and return change ---");
+        vendingMachine.dispense();
     }
 }

@@ -1,11 +1,11 @@
 package chessgame;
 
-import chessgame.pieces.Piece;
-
 public class Player {
+    private final String name;
     private final Color color;
 
-    public Player(Color color) {
+    public Player(String name, Color color) {
+        this.name = name;
         this.color = color;
     }
 
@@ -13,20 +13,7 @@ public class Player {
         return color;
     }
 
-    public void makeMove(Board board, Move move) {
-        Piece piece = move.getPiece();
-        int destRow = move.getDestRow();
-        int destCol = move.getDestCol();
-
-        if (board.isValidMove(piece, destRow, destCol)) {
-            int sourceRow = piece.getRow();
-            int sourceCol = piece.getCol();
-            board.setPiece(sourceRow, sourceCol, null);
-            board.setPiece(destRow, destCol, piece);
-            piece.setRow(destRow);
-            piece.setCol(destCol);
-        } else {
-            throw new InvalidMoveException("Invalid move!");
-        }
+    public String getName() {
+        return name;
     }
 }

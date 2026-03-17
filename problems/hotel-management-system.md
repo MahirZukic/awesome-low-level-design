@@ -10,11 +10,16 @@
 7. The system should provide reporting and analytics features for hotel management.
 8. The system should be scalable and handle a large number of rooms and guests.
 
+## UML Class Diagram
+
+![](../class-diagrams/hotelmanagementsystem-class-diagram.png)
+
 ## Implementations
-#### [Java Implementation](../solutions/java/src/hotelmanagement/) 
-#### [Python Implementation](../solutions/python/hotelmanagement/)
-#### [C# Implementation](../solutions/c%23/HotelManagementSystem/)
-#### [Go Implementation](../solutions/golang/hotelmanagement/)
+#### [Java Implementation](../solutions/java/src/hotelmanagementsystem/) 
+#### [Python Implementation](../solutions/python/hotelmanagementsystem/)
+#### [C++ Implementation](../solutions/cpp/hotelmanagementsystem/)
+#### [C# Implementation](../solutions/csharp/hotelmanagementsystem/)
+#### [Go Implementation](../solutions/golang/hotelmanagementsystem/)
 
 ## Classes, Interfaces and Enumerations
 1. The **Guest** class represents a guest of the hotel, with properties such as ID, name, email, and phone number.

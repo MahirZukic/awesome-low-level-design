@@ -10,10 +10,15 @@
 7. The game should handle player turns and allow players to make moves alternately.
 8. The game should provide a user interface for players to interact with the game.
 
+## UML Class Diagram
+
+![](../class-diagrams/chessgame-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/chessgame/) 
 #### [Python Implementation](../solutions/python/chessgame/)
-#### [C# Implementation](../solutions/c%23/ChessGame/)
+#### [C++ Implementation](../solutions/cpp/chessgame/)
+#### [C# Implementation](../solutions/csharp/chessgame/)
 #### [Go Implementation](../solutions/golang/chessgame/)
 
 ## Classes, Interfaces and Enumerations

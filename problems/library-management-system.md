@@ -10,10 +10,15 @@
 7. The system should handle concurrent access to the library catalog and member records.
 8. The system should be extensible to accommodate future enhancements and new features.
 
+## UML Class Diagram
+
+![](../class-diagrams/librarymanagementsystem-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/librarymanagementsystem/) 
 #### [Python Implementation](../solutions/python/librarymanagementsystem/)
-#### [C# Implementation](../solutions/c%23/LibraryManagementSystem/)
+#### [C++ Implementation](../solutions/cpp/librarymanagementsystem/)
+#### [C# Implementation](../solutions/csharp/librarymanagementsystem/)
 #### [Go Implementation](../solutions/golang/librarymanagementsystem/)
 
 ## Classes, Interfaces and Enumerations

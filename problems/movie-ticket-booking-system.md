@@ -10,10 +10,15 @@
 7. The system should allow theater administrators to add, update, and remove movies, shows, and seating arrangements.
 8. The system should be scalable to handle a large number of concurrent users and bookings.
 
+## UML Class Diagram
+
+![](../class-diagrams/movieticketbookingsystem-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/movieticketbookingsystem/) 
 #### [Python Implementation](../solutions/python/movieticketbookingsystem/)
-#### [C# Implementation](../solutions/c%23/MovieTicketBookingSystem/)
+#### [C++ Implementation](../solutions/cpp/movieticketbookingsystem/)
+#### [C# Implementation](../solutions/csharp/movieticketbookingsystem/)
 #### [Go Implementation](../solutions/golang/movieticketbookingsystem/)
 
 ## Classes, Interfaces and Enumerations

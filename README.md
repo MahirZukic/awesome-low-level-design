@@ -5,97 +5,165 @@
   <a href="https://blog.algomaster.io/">Join Free Newsletter</a>
 </p>
 
-This repository contains resources to learn Low Level Design (LLD) / Object Oriented Design (OOD) and prepare for interviews.
+This repository contains resources to learn Low Level Design (LLD) / Object Oriented Design (OOD) and prepare for interviews. It covers OOP fundamentals, design patterns, UML, concurrency and commonly asked interview questions.
 
-## 📌 Fundamental Concepts
+👉 For a better and more comprehensive experience, checkout the [LLD page at AlgoMaster.io](https://algomaster.io/learn/lld)
 
-- [Basics OOP Concepts](https://blog.algomaster.io/p/basic-oop-concepts-explained-with-code)
+## 🧱 OOP Fundamentals
+- [Classes and Objects](https://algomaster.io/learn/lld/classes-and-objects)
+- [Enums](https://algomaster.io/learn/lld/enums)
+- [Interfaces](https://algomaster.io/learn/lld/interfaces)
+- [Encapsulation](https://algomaster.io/learn/lld/encapsulation)
+- [Abstraction](https://algomaster.io/learn/lld/abstraction)
+- [Inheritance](https://algomaster.io/learn/lld/inheritance)
+- [Polymorphism](https://algomaster.io/learn/lld/polymorphism)
+
+## 🔗 Class Relationships
+- [Association](https://algomaster.io/learn/lld/association)
+- [Aggregation](https://algomaster.io/learn/lld/aggregation)
+- [Composition](https://algomaster.io/learn/lld/composition)
+- [Dependency](https://algomaster.io/learn/lld/dependency)
+
+## 🧭 Design Principles
+- [DRY Principle](https://algomaster.io/learn/lld/dry)
+- [YAGNI Principle](https://algomaster.io/learn/lld/yagni)
+- [KISS Principle](https://algomaster.io/learn/lld/kiss)
 - [SOLID Principles with Pictures](https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898)
 - [SOLID Principles with Code](https://blog.algomaster.io/p/solid-principles-explained-with-code)
-- [DRY Principle](https://blog.algomaster.io/p/082450d8-0e7b-4447-a8dc-b7308e45f048)
-- [YAGNI Principle](https://blog.algomaster.io/p/8c3c7da7-885b-4a9c-a6e4-70ee02de4772)
-- [KISS Principle](https://blog.algomaster.io/p/21b57678-b351-4ed4-b390-3b6308af2f7d)
-- [Coursera - Object-Oriented Design](https://www.coursera.org/learn/object-oriented-design)
 
-## ⚙️ Design Patterns
+## 🧩 Design Patterns
 
-| **Creational Patterns**                                                       | **Structural Patterns**                                         | **Behavioral Patterns**                                                                     |
-| ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Singleton](https://blog.algomaster.io/p/singleton-design-pattern)            | [Adapter](https://refactoring.guru/design-patterns/adapter)     | [Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility) |
-| [Factory Method](https://refactoring.guru/design-patterns/factory-method)     | [Bridge](https://refactoring.guru/design-patterns/bridge)       | [Command](https://refactoring.guru/design-patterns/command)                                 |
-| [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory) | [Composite](https://refactoring.guru/design-patterns/composite) | [Iterator](https://refactoring.guru/design-patterns/iterator)                               |
-| [Builder](https://refactoring.guru/design-patterns/builder)                   | [Decorator](https://refactoring.guru/design-patterns/decorator) | [Mediator](https://refactoring.guru/design-patterns/mediator)                               |
-| [Prototype](https://refactoring.guru/design-patterns/prototype)               | [Facade](https://refactoring.guru/design-patterns/facade)       | [Memento](https://refactoring.guru/design-patterns/memento)                                 |
-|                                                                               | [Flyweight](https://refactoring.guru/design-patterns/flyweight) | [Observer](https://refactoring.guru/design-patterns/observer)                               |
-|                                                                               | [Proxy](https://refactoring.guru/design-patterns/proxy)         | [State](https://refactoring.guru/design-patterns/state)                                     |
-|                                                                               |                                                                 | [Strategy](https://refactoring.guru/design-patterns/strategy)                               |
-|                                                                               |                                                                 | [Template Method](https://refactoring.guru/design-patterns/template-method)                 |
-|                                                                               |                                                                 | [Visitor](https://refactoring.guru/design-patterns/visitor)                                 |
+| **Creational Patterns**                                                       | **Structural Patterns**                                         | **Behavioral Patterns**                                                               |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [Singleton](https://algomaster.io/learn/lld/singleton)            | [Adapter](https://algomaster.io/learn/lld/adapter)     | [Iterator](https://algomaster.io/learn/lld/iterator)                         |
+| [Factory Method](https://algomaster.io/learn/lld/factory-method)     | [Bridge](https://algomaster.io/learn/lld/bridge)       | [Observer](https://algomaster.io/learn/lld/observer)                         |
+| [Abstract Factory](https://algomaster.io/learn/lld/abstract-factory) | [Composite](https://algomaster.io/learn/lld/composite) | [Strategy](https://algomaster.io/learn/lld/strategy)                         |
+| [Builder](https://algomaster.io/learn/lld/builder)                   | [Decorator](https://algomaster.io/learn/lld/decorator) | [Command](https://algomaster.io/learn/lld/command)                           |
+| [Prototype](https://algomaster.io/learn/lld/prototype)               | [Facade](https://algomaster.io/learn/lld/facade)       | [State](https://algomaster.io/learn/lld/state)                               |
+|                                                                               | [Flyweight](https://algomaster.io/learn/lld/flyweight) | [Template Method](https://algomaster.io/learn/lld/template-method)           |
+|                                                                               | [Proxy](https://algomaster.io/learn/lld/proxy)         | [Visitor](https://algomaster.io/learn/lld/visitor)                           |
+|                                                                               |                                                                 | [Mediator](https://algomaster.io/learn/lld/mediator)                         |
+|                                                                               |                                                                 | [Memento](https://algomaster.io/learn/lld/memento)                           |
+|                                                                               |                                                                 | [Chain of Responsibility](https://algomaster.io/learn/lld/chain-of-responsibility) |
 
 ## 🗂️ UML
-- [Class Diagram](https://blog.algomaster.io/p/uml-class-diagram-explained-with-examples)
-- [Use Case Diagram](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/)
-- [Sequence Diagram](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/)
-- [Activity Diagram](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/)
-- [State Machine Diagram](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/)
+- [Class Diagram](https://algomaster.io/learn/lld/class-diagram)
+- [Use Case Diagram](https://algomaster.io/learn/lld/use-case-diagram)
+- [Sequence Diagram](https://algomaster.io/learn/lld/sequence-diagram)
+- [Activity Diagram](https://algomaster.io/learn/lld/activity-diagram)
+- [State Machine Diagram](https://algomaster.io/learn/lld/state-machine-diagram)
+
+## ⏱️ Concurrency and Multi-threading Concepts
+### Concurrency 101
+- [Introduction to Concurrency](https://algomaster.io/learn/concurrency-interview/introduction-to-concurrency)
+- [Concurrency vs Parallelism](https://algomaster.io/learn/concurrency-interview/concurrency-vs-parallelism)
+- [Processes vs Threads](https://algomaster.io/learn/concurrency-interview/processes-vs-threads)
+- [Thread Lifecycle and States](https://algomaster.io/learn/concurrency-interview/thread-lifecycle-and-states)
+- [Race Conditions and Critical Sections](https://algomaster.io/learn/concurrency-interview/race-conditions-and-critical-sections)
+### Synchronization Primitives
+- [Mutex (Mutual Exclusion)](https://algomaster.io/learn/concurrency-interview/mutex)
+- [Semaphores](https://algomaster.io/learn/concurrency-interview/semaphores)
+- [Condition Variables](https://algomaster.io/learn/concurrency-interview/condition-variables)
+- [Coarse-grained vs Fine-grained Locking](https://algomaster.io/learn/concurrency-interview/coarse-vs-fine-grained-locking)
+- [Reentrant Locks](https://algomaster.io/learn/concurrency-interview/reentrant-locks)
+- [Try-Lock and Timed Locking](https://algomaster.io/learn/concurrency-interview/try-lock-and-timed-locking)
+- [Compare-and-Swap (CAS)](https://algomaster.io/learn/concurrency-interview/compare-and-swap)
+### Concurrency Challenges
+- [Deadlock](https://algomaster.io/learn/concurrency-interview/deadlock)
+- [Livelock](https://algomaster.io/learn/concurrency-interview/livelock)
+### Concurrency Patterns
+- [Signaling Pattern](https://algomaster.io/learn/concurrency-interview/signaling-pattern)
+- [Thread Pool Pattern](https://algomaster.io/learn/concurrency-interview/thread-pool-pattern)
+- [Producer-Consumer Pattern](https://algomaster.io/learn/concurrency-interview/producer-consumer-pattern)
+- [Reader-Writer Pattern](https://algomaster.io/learn/concurrency-interview/reader-writer-pattern)
 
 ## ✅ [How to Answer a LLD Interview Problem](https://blog.algomaster.io/p/how-to-answer-a-lld-interview-problem)
 <img src="images/interview-template.png" width="350" height="250">
 
 ## 💻 Low Level Design Interview Problems
-### Easy
+### Easy Problems
 
 - [Design Parking Lot](problems/parking-lot.md)
-- [Design a Vending Machine](problems/vending-machine.md)
 - [Design Stack Overflow](problems/stack-overflow.md)
+- [Design a Vending Machine](problems/vending-machine.md)
 - [Design Logging Framework](problems/logging-framework.md)
-- [Design Coffee Vending Machine](problems/coffee-vending-machine.md)
 - [Design Traffic Signal Control System](problems/traffic-signal.md)
+- [Design Coffee Vending Machine](problems/coffee-vending-machine.md)
 - [Design a Task Management System](problems/task-management-system.md)
 
-### Medium
+### Medium Problems
 
-- [Design Pub Sub System](problems/pub-sub-system.md)
-- [Design Tic Tac Toe Game](problems/tic-tac-toe.md)
-- [Design Car Rental System](problems/car-rental-system.md)
-- [Design an ATM](problems/atm.md)
-- [Design Hotel Management System](problems/hotel-management-system.md)
+- [Design ATM](problems/atm.md)
 - [Design LinkedIn](problems/linkedin.md)
-- [Design a Social Network like Facebook](problems/social-networking-service.md)
+- [Design LRU Cache](problems/lru-cache.md)
+- [Design Tic Tac Toe Game](problems/tic-tac-toe.md)
+- [Design Pub Sub System](problems/pub-sub-system.md)
 - [Design an Elevator System](problems/elevator-system.md)
-- [Design a Library Management System](problems/library-management-system.md)
-- [Design Restaurant Management System](problems/restaurant-management-system.md)
-- [Design Airline Management System](problems/airline-management-system.md)
-- [Design a Digital Wallet System](problems/digital-wallet-system.md)
+- [Design Car Rental System](problems/car-rental-system.md)
 - [Design an Online Auction System](problems/online-auction-system.md)
-- [Design a Concert Ticket Booking System](problems/concert-ticketing-system.md)
-- [Design a Cache using LRU Eviction Policy](problems/lru-cache.md)
+- [Design Hotel Management System](problems/hotel-management-system.md)
+- [Design a Digital Wallet Service](problems/digital-wallet-service.md)
+- [Design Airline Management System](problems/airline-management-system.md)
+- [Design a Library Management System](problems/library-management-system.md)
+- [Design a Social Network like Facebook](problems/social-networking-service.md)
+- [Design Restaurant Management System](problems/restaurant-management-system.md)
+- [Design a Concert Ticket Booking System](problems/concert-ticket-booking-system.md)
 
-### Hard
+### Hard Problems
 
-- [Design Movie Ticket Booking System](problems/movie-ticket-booking-system.md)
+- [Design CricInfo](problems/cricinfo.md)
 - [Design Splitwise](problems/splitwise.md)
+- [Design Chess Game](problems/chess-game.md)
 - [Design a Snake and Ladder game](problems/snake-and-ladder.md)
+- [Design Ride-Sharing Service like Uber](problems/ride-sharing-service.md)
+- [Design Course Registration System](problems/course-registration-system.md)
+- [Design Movie Ticket Booking System](problems/movie-ticket-booking-system.md)
 - [Design Online Shopping System like Amazon](problems/online-shopping-service.md)
 - [Design Online Stock Brokerage System](problems/online-stock-brokerage-system.md)
-- [Design CricInfo](problems/cricinfo.md)
-- [Design Chess Game](problems/chess-game.md)
-- [Design Ride-Sharing Service (like Uber)](problems/ride-sharing-service.md)
-- [Design Online Food Delivery Service (like Swiggy)](problems/food-delivery-service.md)
-- [Design Music Streaming Service (like Spotify)](problems/music-streaming-service.md)
-- [Design University Course Registration System](problems/course-registration-system.md)
+- [Design Music Streaming Service like Spotify](problems/music-streaming-service.md)
+- [Design Online Food Delivery Service like Swiggy](problems/food-delivery-service.md)
+
+## ⏱️ Concurrency and Multi-threading Problems
+
+- [Print FooBar Alternately](https://algomaster.io/learn/concurrency-interview/print-foobar-alternately)
+- [Print Zero Even Odd](https://algomaster.io/learn/concurrency-interview/print-zero-even-odd)
+- [Fizz Buzz Multithreaded](https://algomaster.io/learn/concurrency-interview/fizz-buzz-multithreaded)
+- [Building H2O Molecule](https://algomaster.io/learn/concurrency-interview/building-h2o)
+- [Design Thread-Safe Cache with TTL](https://algomaster.io/learn/concurrency-interview/design-thread-safe-cache-with-ttl)
+- [Design Concurrent HashMap](https://algomaster.io/learn/concurrency-interview/design-concurrent-hashmap)
+- [Design Thread-Safe Blocking Queue](https://algomaster.io/learn/concurrency-interview/design-thread-safe-blocking-queue)
+- [Design Concurrent Bloom Filter](https://algomaster.io/learn/concurrency-interview/design-concurrent-bloom-filter)
+- [Multi-threaded Merge Sort](https://algomaster.io/learn/concurrency-interview/multi-threaded-merge-sort)
+
+## 📇 Courses
+- [Master LLD Interviews - AlgoMaster.io](https://algomaster.io/learn/lld/course-introduction)
+- [Master Concurrency Interviews - AlgoMaster.io](https://algomaster.io/learn/concurrency-interview)
 
 ## 📚 Books
-
 - [Head First Design Patterns](https://www.amazon.in/dp/9385889753)
 - [Clean Code](https://www.amazon.in/dp/B001GSTOAM)
 - [Refactoring: Improving the Design of Existing Code](https://www.amazon.in/dp/0134757599)
 
 ## 📩 Newsletter
-
 - [AlgoMaster Newsletter](https://blog.algomaster.io/)
 
 ## Additional resources
-
+- [Coursera - Object-Oriented Design](https://www.coursera.org/learn/object-oriented-design)
 - [Coursera - Design Patterns](https://www.coursera.org/learn/design-patterns)
 - [Github - Awesome Design Patterns](https://github.com/DovAmir/awesome-design-patterns)
+
+## 🤝 Contributing
+Contributions are welcome! If you'd like to add a new problem, improve existing content, or fix errors:
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Submit a pull request
+
+Please make sure to update Readme files and documentation as appropriate.
+
+---
+
+<p align="center">
+  <i>If you find this resource helpful, please give it a star and share it with others!</i>
+</p>

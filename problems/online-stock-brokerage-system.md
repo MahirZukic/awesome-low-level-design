@@ -10,10 +10,15 @@
 7. The system should be scalable and able to handle a large number of users and transactions.
 8. The system should be secure and protect sensitive user information.
 
+## UML Class Diagram
+
+![](../class-diagrams/onlinestockbrokeragesystem-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/onlinestockbrokeragesystem/) 
 #### [Python Implementation](../solutions/python/onlinestockbrokeragesystem/)
-#### [C# Implementation](../solutions/c%23/OnlineStockBrokerageSystem/)
+#### [C++ Implementation](../solutions/cpp/onlinestockbrokeragesystem/)
+#### [C# Implementation](../solutions/csharp/onlinestockbrokeragesystem/)
 #### [Go Implementation](../solutions/golang/onlinestockbrokeragesystem/)
 
 ## Classes, Interfaces and Enumerations

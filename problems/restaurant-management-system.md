@@ -9,10 +9,15 @@
 6. The system should generate reports and analytics for management, such as sales reports and inventory analysis.
 7. The system should handle concurrent access and ensure data consistency.
 
+## UML Class Diagram
+
+![](../class-diagrams/restaurantmanagementsystem-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/restaurantmanagementsystem/) 
 #### [Python Implementation](../solutions/python/restaurantmanagementsystem/)
-#### [C# Implementation](../solutions/c%23/RestaurantManagementSystem/)
+#### [C++ Implementation](../solutions/cpp/restaurantmanagementsystem/)
+#### [C# Implementation](../solutions/csharp/restaurantmanagementsystem/)
 #### [Go Implementation](../solutions/golang/restaurantmanagementsystem/)
 
 ## Classes, Interfaces and Enumerations

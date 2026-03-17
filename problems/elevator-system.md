@@ -9,10 +9,15 @@
 6. The elevators should be able to handle multiple requests concurrently and process them in an optimal order.
 7. The system should ensure thread safety and prevent race conditions when multiple threads interact with the elevators.
 
+## UML Class Diagram
+
+![](../class-diagrams/elevatorsystem-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/elevatorsystem/) 
 #### [Python Implementation](../solutions/python/elevatorsystem/)
-#### [C# Implementation](../solutions/c%23/ElevatorSystem/)
+#### [C++ Implementation](../solutions/cpp/elevatorsystem/)
+#### [C# Implementation](../solutions/csharp/elevatorsystem/)
 #### [Go Implementation](../solutions/golang/elevatorsystem/)
 
 ## Classes, Interfaces and Enumerations

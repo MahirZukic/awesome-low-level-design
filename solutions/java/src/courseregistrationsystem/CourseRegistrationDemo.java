@@ -1,46 +1,62 @@
 package courseregistrationsystem;
 
-import java.util.ArrayList;
-import java.util.List;
+import courseregistrationsystem.model.*;
+import courseregistrationsystem.observer.WaitlistManager;
+import courseregistrationsystem.repository.CourseRepository;
+import courseregistrationsystem.repository.StudentRepository;
+
+import java.time.DayOfWeek;
+import java.time.LocalTime;
 
 public class CourseRegistrationDemo {
-    public static void run() {
-        CourseRegistrationSystem registrationSystem = CourseRegistrationSystem.getInstance();
+    public static void main(String[] args) {
+        // 1. Setup the system
+        CourseRegistrationSystemFacade system = new CourseRegistrationSystemFacade();
+        StudentRepository studentRepo = StudentRepository.getInstance();
+        CourseRepository courseRepo = CourseRepository.getInstance();
+        WaitlistManager waitlistManager = WaitlistManager.getInstance();
 
-        // Create courses
-        Course course1 = new Course("CS101", "Introduction to Programming", "John Doe", 50, 0);
-        Course course2 = new Course("CS201", "Data Structures and Algorithms", "Jane Smith", 30, 0);
-        registrationSystem.addCourse(course1);
-        registrationSystem.addCourse(course2);
+        // 2. Setup courses and professors
+        Course cs101 = new Course("CS101", "Intro to Programming");
+        Course cs201 = new Course("CS201", "Data Structures");
+        cs201.addPrerequisite(cs101);
+        courseRepo.saveCourse(cs101); courseRepo.saveCourse(cs201);
 
-        // Create students
-        Student student1 = new Student(1, "Alice", "alice@example.com", new ArrayList<>());
-        Student student2 = new Student(2, "Bob", "bob@example.com", new ArrayList<>());
-        registrationSystem.addStudent(student1);
-        registrationSystem.addStudent(student2);
+        Professor profA = new Professor("P1", "Dr. Smith");
 
-        // Search for courses
-        List<Course> searchResults = registrationSystem.searchCourses("CS");
-        System.out.println("Search Results:");
-        for (Course course : searchResults) {
-            System.out.println(course.getCode() + " - " + course.getName());
-        }
+        // 3. Setup course offerings using the Builder
+        CourseOffering cs101Offering = new CourseOffering.Builder("CS101-F23", cs101)
+                .withProfessor(profA).at(new TimeSlot(DayOfWeek.MONDAY, LocalTime.of(10, 0), LocalTime.of(11, 30)))
+                .withCapacity(1).build();
 
-        // Register courses for students
-        boolean registered1 = registrationSystem.registerCourse(student1, course1);
-        boolean registered2 = registrationSystem.registerCourse(student2, course1);
-        boolean registered3 = registrationSystem.registerCourse(student1, course2);
+        CourseOffering cs201Offering = new CourseOffering.Builder("CS201-F23", cs201)
+                .withProfessor(profA).at(new TimeSlot(DayOfWeek.WEDNESDAY, LocalTime.of(14, 0), LocalTime.of(15, 30)))
+                .withCapacity(2).build();
 
-        System.out.println("Registration Results:");
-        System.out.println("Student 1 - Course 1: " + registered1);
-        System.out.println("Student 2 - Course 1: " + registered2);
-        System.out.println("Student 1 - Course 2: " + registered3);
+        // Register the WaitlistManager as an observer for the course offering
+        cs101Offering.addObserver(waitlistManager);
 
-        // Get registered courses for a student
-        List<Course> registeredCourses = registrationSystem.getRegisteredCourses(student1);
-        System.out.println("Registered Courses for Student 1:");
-        for (Course course : registeredCourses) {
-            System.out.println(course.getCode() + " - " + course.getName());
-        }
+        courseRepo.saveOffering(cs101Offering); courseRepo.saveOffering(cs201Offering);
+
+        // 4. Setup students
+        Student alice = new Student("S1", "Alice");
+        Student bob = new Student("S2", "Bob");
+        Student charlie = new Student("S3", "Charlie");
+        alice.addCompletedCourse(cs101); // Alice has the prerequisite for CS201
+        studentRepo.save(alice); studentRepo.save(bob); studentRepo.save(charlie);
+
+        // 5. Run Registration Scenarios
+        System.out.println("----------- SCENARIO 1: Successful Registration -----------");
+        system.registerStudentForCourse(alice.getId(), cs201Offering.getId());
+
+        System.out.println("\n----------- SCENARIO 2: Prerequisite Failure -----------");
+        system.registerStudentForCourse(bob.getId(), cs201Offering.getId());
+
+        System.out.println("\n----------- SCENARIO 3: Course Capacity and Waitlist -----------");
+        system.registerStudentForCourse(bob.getId(), cs101Offering.getId()); // Bob gets the last spot
+        system.registerStudentForCourse(charlie.getId(), cs101Offering.getId()); // Charlie gets waitlisted
+
+        System.out.println("\n----------- SCENARIO 4: Dropping a course and Observer pattern triggering waitlist promotion -----------");
+        system.dropStudentFromCourse(bob.getId(), cs101Offering.getId());
     }
 }

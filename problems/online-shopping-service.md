@@ -10,11 +10,16 @@
 7. The system should be scalable to handle a large number of products and users.
 8. The system should provide a user-friendly interface for a seamless shopping experience.
 
+## UML Class Diagram
+
+![](../class-diagrams/onlineshoppingservice-class-diagram.png)
+
 ## Implementations
-#### [Java Implementation](../solutions/java/src/onlineshopping/) 
-#### [Python Implementation](../solutions/python/onlineshopping/)
-#### [C# Implementation](../solutions/c%23/OnlineShoppingService/)
-#### [Go Implementation](../solutions/golang/onlineshopping/)
+#### [Java Implementation](../solutions/java/src/onlineshoppingservice/)
+#### [Python Implementation](../solutions/python/onlineshoppingservice/)
+#### [C++ Implementation](../solutions/cpp/onlineshoppingservice/)
+#### [C# Implementation](../solutions/csharp/onlineshoppingservice/)
+#### [Go Implementation](../solutions/golang/onlineshoppingservice/)
 
 ## Classes, Interfaces and Enumerations
 1. The **User** class represents a user in the online shopping service, with properties such as ID, name, email, password, and a list of orders.

@@ -9,10 +9,15 @@
 6. The system should ensure data consistency and prevent race conditions.
 7. The system should be extensible to accommodate future enhancements and new features.
 
+## UML Class Diagram
+
+![](../class-diagrams/courseregistrationsystem-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/courseregistrationsystem/) 
 #### [Python Implementation](../solutions/python/courseregistrationsystem/)
-#### [C# Implementation](../solutions/c%23/CourseRegistrationSystem/)
+#### [C++ Implementation](../solutions/cpp/courseregistrationsystem/)
+#### [C# Implementation](../solutions/csharp/courseregistrationsystem/)
 #### [Go Implementation](../solutions/golang/courseregistrationsystem/)
 
 ## Classes, Interfaces and Enumerations

@@ -8,10 +8,15 @@
 5. The system should handle concurrent access and ensure data consistency.
 6. The ATM should have a user-friendly interface for users to interact with.
 
+## UML Class Diagram
+
+![](../class-diagrams/atm-class-diagram.png)
+
 ## Implementations
 #### [Java Implementation](../solutions/java/src/atm/) 
 #### [Python Implementation](../solutions/python/atm/)
-#### [C# Implementation](../solutions/c%23/ATM/)
+#### [C++ Implementation](../solutions/cpp/atm/)
+#### [C# Implementation](../solutions/csharp/atm/)
 #### [Go Implementation](../solutions/golang/atm/)
 
 ## Classes, Interfaces and Enumerations
